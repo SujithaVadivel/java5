@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int maxpower = Integer.MIN_VALUE;
+        for (int i = 0; i < n; i++) {
+            int power = scanner.nextInt();
+            if (power > maxpower) {
+                maxpower = power;
+            }
+        }
+        System.out.println(maxpower + " is the maximum element in the array");
+        scanner.close();
+    }
+}
